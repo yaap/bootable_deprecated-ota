@@ -43,7 +43,6 @@ cc_test_host {
         "libdivsufsort64",
         "libdivsufsort",
         "libfstab",
-        "libc++fs",
     ],
 
     test_suites: ["general-tests"],

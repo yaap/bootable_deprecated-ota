@@ -150,7 +150,6 @@ cc_library_host_static {
     static_libs: [
         "libupdater_core",
         "libfstab",
-        "libc++fs",
     ],
 
     target: {
@@ -180,7 +179,6 @@ cc_binary_host {
         "libupdater_core",
         "libcrypto_static",
         "libfstab",
-        "libc++fs",
     ],
 
     target: {
