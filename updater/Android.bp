@@ -31,7 +31,6 @@ cc_defaults {
         "liblp",
         "libselinux",
         "libsparse",
-        "libsquashfs_utils",
         "libbrotli",
         "libbz",
         "libziparchive",
