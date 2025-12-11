@@ -677,7 +677,7 @@ Value* SymlinkFn(const char* name, State* state, const std::vector<std::unique_p
     return ErrorAbort(state, kArgsParsingFailure, "%s() target argument can't be empty", name);
   }
 
-  size_t bad = 0;
+  [[maybe_unused]] size_t bad = 0;
   for (size_t i = 1; i < args.size(); ++i) {
     const auto& src = args[i];
     if (unlink(src.c_str()) == -1 && errno != ENOENT) {
