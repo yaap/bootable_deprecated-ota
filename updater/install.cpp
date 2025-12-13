@@ -718,7 +718,7 @@ struct perm_parsed_args {
 static struct perm_parsed_args ParsePermArgs(State* state, const std::vector<std::string>& args) {
   struct perm_parsed_args parsed;
   auto updater = state->updater;
-  int bad = 0;
+  [[maybe_unused]] int bad = 0;
   static int max_warnings = 20;
 
   memset(&parsed, 0, sizeof(parsed));
