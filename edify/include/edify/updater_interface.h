@@ -21,10 +21,10 @@
 #include <string>
 #include <string_view>
 
+#include "updater_runtime_interface.h"
+
 struct ZipArchive;
 typedef ZipArchive* ZipArchiveHandle;
-
-class UpdaterRuntimeInterface;
 
 class UpdaterInterface {
  public:
