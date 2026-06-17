@@ -24,14 +24,12 @@ cc_defaults {
         "libext4_utils",
         "libdm",
         "libfec",
-        "libfec_rs",
         "libavb",
         "libverity_tree",
         "liblog",
         "liblp",
         "libselinux",
         "libsparse",
-        "libsquashfs_utils",
         "libbrotli",
         "libbz",
         "libziparchive",
@@ -56,6 +54,7 @@ cc_defaults {
 
     shared_libs: [
         "libcrypto",
+        "libfec_rs",
     ],
 }
 
@@ -172,6 +171,10 @@ cc_binary_host {
     cflags: [
         "-Wall",
         "-Werror",
+    ],
+
+    shared_libs: [
+        "libfec_rs",
     ],
 
     static_libs: [
